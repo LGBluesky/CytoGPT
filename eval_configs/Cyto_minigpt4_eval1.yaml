@@ -1,0 +1,22 @@
+model:
+  arch: minigpt4
+  model_type: pretrain_vicuna0
+  max_txt_len: 160
+  end_sym: "###"
+  low_resource: False       # True: int 8  False: fp16
+  q_former_model: '/mnt/disk1/liushijie/Process/CytoGPT/MiniGPT-4_Cyto-result/Q-former_stage2/20241024100/checkpoint_047.pth'
+  ckpt: '/mnt/disk1/liushijie/Process/CytoGPT/MiniGPT-4_Cyto-result/minigpt4_autoPrompt_finetune/20250618015/checkpoint_099.pth'  # path to linear layer checkpoint
+
+datasets:
+  cyto_vqa:
+    vis_processor:
+      train:
+        name: "blip2_image_eval"
+        image_size: 224
+    text_processor:
+      train:
+        name: "blip_caption"
+
+run:
+  task: image_text_pretrain
+  seed: 42

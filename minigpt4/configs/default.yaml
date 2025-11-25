@@ -1,0 +1,5 @@
+env:
+  # For default users
+  # cache_root: "cache"
+  # For internal use with persistent storage
+  cache_root: "/mnt/disk1/liushijie/Process/Data/Q-former_finetune_data/Auto_revise/NewData"

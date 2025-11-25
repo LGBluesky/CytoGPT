@@ -1,0 +1,7 @@
+datasets:
+
+  cyto_multi_vqa:
+    data_type: images
+    build_info:
+      image_path: /mnt/disk1/liushijie/Process/Data/Q-former_finetune_data/Auto_revise/NewData/image
+      ann_path: /mnt/disk1/liushijie/Process/Data/Q-former_finetune_data/Auto_revise/NewData/ManualRevise1/multi-vqa/train-vqa_C_split_F.json
